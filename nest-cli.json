@@ -1,0 +1,39 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/record/src",
+  "monorepo": true,
+  "root": "apps/record",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/record/tsconfig.app.json",
+    "plugins": [
+      "@nestjs/swagger/plugin"
+    ],
+    "assets": [
+      "**/*.env"
+    ]
+  },
+  "projects": {
+    "record": {
+      "type": "application",
+      "root": "apps/record",
+      "entryFile": "main",
+      "sourceRoot": "apps/record/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/record/tsconfig.app.json",
+        "assets": [
+          "**/*.env"
+        ]
+      }
+    },
+    "domain": {
+      "type": "library",
+      "root": "libs/domain",
+      "entryFile": "index",
+      "sourceRoot": "libs/domain/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/domain/tsconfig.lib.json"
+      }
+    }
+  }
+}
