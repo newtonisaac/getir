@@ -79,10 +79,10 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "@tui/domain/(.*)": "<rootDir>/libs/domain/src/$1",
-      "@tui/domain": "<rootDir>/libs/domain/src",
-      "@tui/integration/(.*)": "<rootDir>/libs/integration/src/$1",
-      "@tui/integration": "<rootDir>/libs/integration/src"
+      "@getir/domain/(.*)": "<rootDir>/libs/domain/src/$1",
+      "@getir/domain": "<rootDir>/libs/domain/src",
+      "@getir/integration/(.*)": "<rootDir>/libs/integration/src/$1",
+      "@getir/integration": "<rootDir>/libs/integration/src"
     }
   }
 }
